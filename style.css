@@ -1,0 +1,552 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: auto ;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+* {
+    margin: 0 0;
+}
+
+header {
+    background: linear-gradient(to bottom, #CBFFF2 0%, #CBFAE8 50%, #CFFFED 100%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+nav {
+    margin-bottom: 30px;  
+}
+
+#logo {
+    padding: 30px 0 0 200px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.hamburgerButton {
+    border-color: #000;
+    border-radius: 50%;
+    height: 40px;
+    border: 1px;
+    box-shadow: 0 0 10px rgba(63, 62, 62, 0.5);
+
+}
+
+button:focus {
+    outline: 0;
+}
+
+nav {
+    padding: 30px 200px 0 0;
+    text-align: right;
+}
+
+nav img {
+    height: 14px;
+    margin-right: 12px;
+}
+
+nav a {
+    margin-right: 6px;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.menu a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    padding-right: 10px; 
+}
+
+/*SECTION1*/
+
+.theme {
+    background: linear-gradient(to bottom, #CFFFED 0%, #D5FFE9 20%,	#DDFFE4 40%, #E6FFDD 60%, #F2FED0 80%, #FEFFC6 100%);
+}
+
+h1 {
+    font-size: 44px;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 5px;
+}
+
+.theme p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.themePage {
+    display: flex;
+}
+
+.themeImage {
+    width: 60%;
+    padding: 30px 0 0 200px;
+}
+
+.themeImage img {
+    width: 550px;
+}
+
+.themeImage a {
+    color: black;
+    margin-left: 390px;
+    text-decoration: none;
+}
+
+.themeImage p {
+    margin-left: 310px;
+}
+
+.descriptionThemePage {
+    width: 40%;
+    padding: 100px 200px 0 80px;
+}
+
+.descriptionThemePage p {
+    font-size: 16px;
+    text-align: left;
+    width: 300px;
+    color: darkgrey;
+    padding-bottom: 8px; 
+}
+
+.descriptionThemePage button {
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0 0 10px rgba(160, 160, 160, 0.5);
+    margin: 10px 0 16px 90px;
+    padding: 14px 20px;
+}
+
+.descriptionThemePage button + p {
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+@-webkit-keyframes float {
+    0% {
+      text-shadow: 0 5px 5px 0 rgba(100, 100, 100, 0.3);
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+    50% {
+      text-shadow: 0 5px 5px 0 rgba(100, 100, 100, 0.3);
+      -webkit-transform: translatey(-20px);
+              transform: translatey(-20px);
+    }
+    100% {
+      text-shadow: 0 5px 5px 0 rgba(100, 100, 100, 0.3);
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+}
+  
+@keyframes float {
+    0% {
+      text-shadow: 0 5px 5px 0 rgba(100, 100, 100, 0.3);
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+    50% {
+      text-shadow: 0 5px 5px 0 rgba(100, 100, 100, 0.3);
+      -webkit-transform: translatey(-20px);
+              transform: translatey(-20px);
+    }
+    100% {
+      text-shadow: 0 5px 5px 0 rgba(100, 100, 100, 0.3);
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+}
+
+.scrollButtonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.scrollButton {
+    text-shadow: 3px 5px 6px rgb(94, 94, 94), -4px -6px 6px rgb(94, 94, 94);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+    -webkit-animation: float 6s ease-in-out infinite;
+            animation: float 6s ease-in-out infinite;
+}
+
+.scrollButton a {
+    color: #000;
+    text-decoration: none;
+}
+
+.scrollButton p {
+    font-size: 40px;
+    font-weight: 100px;
+    text-align: center;
+}
+
+/*SECTION2*/
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+h4 {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.benefits {
+    display: flex;
+    padding: 0 200px 120px 200px;
+}
+
+.benefits div {
+    width: 33.3%;
+    padding: 0 40px;
+    margin: 0 20px;
+}
+
+.benefits img {
+    width: 160px;
+    box-shadow: 0 0 10px rgba(160, 160, 160, 0.5);
+}
+
+.benefits p {
+    color: darkgrey;
+}
+
+h5 {
+    padding: 10px 0;
+}
+
+/*SECTION3*/
+
+h2 {
+    color: black;
+}
+
+#features {
+    display: flex;
+    padding: 0 200px;
+}
+
+.verticalSlider {
+    width: 4%;
+}
+
+.verticalSlider img {
+    height: 280px;
+}
+
+.featuresImage {
+    width: 50%;
+}
+
+.featuresImage img {
+    width: 350px;
+    padding: 0 30px 0 50px;
+    /*box-shadow: 0 0 10px rgba(160, 160, 160, 0.5);*/
+}
+
+.descriptionFeatures {
+    width: 46%;
+    color: darkgrey;
+}
+
+.descriptionFeatures p {
+    padding: 20px 0;
+}
+
+.descriptionFeatures li {
+    padding: 5px 0;
+}
+
+/*SECTION4*/
+
+#demo {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    padding: 0 200px;
+}
+
+.aboutProduct {
+    display: block;
+}
+
+.learnMore, .videoPreview {
+    box-shadow: 0 0 10px rgba(160, 160, 160, 0.5);
+    height: 195px;
+    width: 280px;
+    margin: 0 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.videoPreview {
+    margin-top: 20px;
+}
+
+.learnMore p, .videoPreview p {
+    color: darkgrey;
+    margin: 15px 0;
+}
+
+.learnMore button {
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0 0 10px rgba(160, 160, 160, 0.5);
+    margin: 15px 0px 0px 70px;
+    width: 150px;
+    height: 50px;
+}
+
+.videoPreview button {
+    margin: 15px 0 0 120px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff; 
+    border: none;
+    box-shadow: 0 0 10px rgba(160, 160, 160, 0.5);
+}
+
+.playbutton {
+    width: 30px;
+    height: 30px;
+    margin: 3px 0 0 3px;
+}
+
+.startupLandingPage {
+    width: 570px;
+    height: 404px;
+    margin-top: 4px;
+    box-shadow: 0 0 10px rgba(160, 160, 160, 0.5);
+}
+
+/*SECTION5*/
+
+#reviews h2, #reviews h3 {
+    text-align: center;
+    padding: 5px;
+}
+
+#reviews h2 {
+    padding-top: 60px;
+}
+
+.slider {
+    position: relative;
+    width: 950px;
+    height: 500px;
+    margin: 50px auto;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider input[name="switch"] {
+    display: none;
+}
+  
+.switch {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    width: 100%;
+    margin-top: 10px;
+    border-color: #cecece;
+}
+
+.lineBetweenSwithers {
+    width: 120px;
+    height: 1px; 
+    margin-top: 10px;
+    background-color: #cecece;
+    border: none;
+}
+
+.switch label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 3px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+    border-radius: 50%;
+    border: none;
+    background-color: #cecece;
+}
+
+#button1:checked~.switch label[for="button1"] {
+    background-color: white;
+}
+  
+#button2:checked~.switch label[for="button2"] {
+    background-color: white;
+}
+  
+#button3:checked~.switch label[for="button3"] {
+    background-color: white;
+}
+  
+.slider-inner {
+    overflow: hidden;
+}
+  
+.slides {
+    width: 400%;
+    transition: all 0.5s;
+}
+  
+.slides div {
+    float: left;
+}
+
+.slideInfo {
+    width: 850px;
+    height: 410px;
+    margin: 90px 0 0 60px;
+    display: flex;
+}
+  
+.ashleyImage {
+   width: 300px;
+   height: 300px;
+   margin-right: 20px;
+}
+
+.quotemark {
+    width: 50px;
+    height: 50px;
+    margin-top: 120px;
+    margin-right: 20px;
+}
+
+.aboutAshley {
+    display: inline-block;
+    padding: 0; 
+    width: 300px;
+    margin-right: 60px; 
+}
+
+#button1:checked~slider-inner slides {
+    transform: translate(0);
+}
+  
+#button2:checked~.slider-inner .slides {
+    transform: translate(-880px);
+}
+  
+#button3:checked~.slider-inner .slides {
+    transform: translate(-1760px);
+}
+
+/*SECTION6*/
+
+#pricing {
+    padding: 0 200px;
+    text-align: center;
+}
+
+.flexiblePrices {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(160, 160, 160, 0.5);
+}
+
+.flexiblePrices div {
+    color: rgb(150, 150, 150);
+    margin: 40px 25px 40px 5px;
+    text-align: center;
+    width: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.basicPrice, .premiumPrice {
+    box-shadow: 0 0 10px rgba(160, 160, 160, 0.5);
+}
+
+.flexiblePrices button {
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0 0 10px rgba(160, 160, 160, 0.5);
+    width: 160px;
+    height: 50px;
+    margin: 20px 0 0 70px;
+}
+
+.flexiblePrices p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.amount {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+sup, sub {
+    font-size: 40px;
+    color: rgb(180, 180, 180);
+}
+
+h6 {
+    margin-top: 45px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    margin-top: 10%;
+}
+
+.copyright {
+    width: 49%;
+    background-color:	#E8E8E8;
+    color: #BDBDBD;
+    margin-left: 1%;
+    padding: 5% 0;
+}
+
+.copyright p {
+    padding-left: 250px;
+}
+
+.subscription {
+    width: 50%;
+    padding: 5% 0;
+}
+
+.subscription p {
+    padding-left: 50px;
+}
