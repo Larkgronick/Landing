@@ -1,7 +1,6 @@
 body {
     width: 100%;
     height: 100vh;
-    margin: auto ;
     font-family: Arial, Helvetica, sans-serif; 
 }
 
@@ -12,7 +11,7 @@ body {
 header {
     background: linear-gradient(to bottom, #CBFFF2 0%, #CBFAE8 50%, #CFFFED 100%);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 18px;
 }
 
@@ -33,7 +32,6 @@ nav {
     height: 40px;
     border: 1px;
     box-shadow: 0 0 10px rgba(63, 62, 62, 0.5);
-
 }
 
 button:focus {
@@ -48,6 +46,10 @@ nav {
 nav img {
     height: 14px;
     margin-right: 12px;
+}
+
+.arrowImage {
+    margin-left: 700px;
 }
 
 nav a {
@@ -69,6 +71,7 @@ nav a {
 
 .theme {
     background: linear-gradient(to bottom, #CFFFED 0%, #D5FFE9 20%,	#DDFFE4 40%, #E6FFDD 60%, #F2FED0 80%, #FEFFC6 100%);
+    
 }
 
 h1 {
@@ -83,7 +86,13 @@ h1 {
     font-size: 20px;
 }
 
+.startupLanding {
+    display: flex;
+    justify-content: center;
+}
+
 .themePage {
+    width: 1500px;
     display: flex;
 }
 
@@ -107,7 +116,7 @@ h1 {
 }
 
 .descriptionThemePage {
-    width: 40%;
+
     padding: 100px 200px 0 80px;
 }
 
@@ -129,10 +138,10 @@ h1 {
 }
 
 .descriptionThemePage button + p {
-    text-align: center;
     color: black;
     font-size: 12px;
     padding-left: 10px;
+    text-align: center;
 }
 
 @-webkit-keyframes float {
@@ -211,9 +220,15 @@ h4 {
     padding-bottom: 40px;
 }
 
+.reasons {
+    display: flex;
+    justify-content: center;
+}
+
 .benefits {
     display: flex;
-    padding: 0 200px 120px 200px;
+    width: 1400px;
+    padding-bottom: 0 200px 120px 200px;
 }
 
 .benefits div {
@@ -229,6 +244,7 @@ h4 {
 
 .benefits p {
     color: darkgrey;
+    margin-bottom: 40px;
 }
 
 h5 {
@@ -244,14 +260,6 @@ h2 {
 #features {
     display: flex;
     padding: 0 200px;
-}
-
-.verticalSlider {
-    width: 4%;
-}
-
-.verticalSlider img {
-    height: 280px;
 }
 
 .featuresImage {
@@ -277,12 +285,110 @@ h2 {
     padding: 5px 0;
 }
 
+#reviews h2, #reviews h3 {
+    text-align: center;
+    padding: 5px;
+}
+
+#reviews h2 {
+    padding-top: 60px;
+}
+
+.switchVertical {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+    border-color: #cecece;
+}
+
+.lineBetweenSwithersVertical {
+    width: 1px;
+    height: 180px; 
+    margin-left: -290px;
+    background-color: #cecece;
+    border: none;
+}
+
+.lineBetweenSwithersVerticalFinish {
+    width: 1px;
+    height: 20px; 
+    margin-left: -290px;
+    background-color: #cecece;
+    border: none;
+}
+
+.switchVertical label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 -300px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+    border-radius: 50%;
+    border: none;
+    background-color: #cecece;
+}
+
+#button1:checked~.switchVertical label[for="button1"] {
+    background-color: white;
+}
+  
+#button2:checked~.switchVertical label[for="button2"] {
+    background-color: white;
+}
+  
+#button3:checked~.switchVertical label[for="button3"] {
+    background-color: white;
+}
+  
+.slidesVertical {
+    width: 400%;
+    height: 410px;
+    transition: all 0.5s;
+}
+  
+.slideInfoVertical {
+    width: 850px;
+    height: 410px;
+    margin: 70px 0 20px 60px;
+    display: flex;
+}
+  
+#button1:checked~slider-inner slidesVertical {
+    transform: translatey(0);
+}
+  
+#button2:checked~.slider-inner .slidesVertical {
+    transform: translatey(-500px);
+}
+  
+#button3:checked~.slider-inner .slidesVertical {
+    transform: translatey(-1000px);
+}
+
+.descriptionFeatures ul {
+    list-style: none;
+}
+  
+ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
 /*SECTION4*/
 
 #demo {
     display: flex;
     justify-content: center;
-    margin-top: 120px;
+    margin: 120px 0 80px 0;
     padding: 0 200px;
 }
 
@@ -397,15 +503,15 @@ h2 {
     background-color: #cecece;
 }
 
-#button1:checked~.switch label[for="button1"] {
+#button4:checked~.switch label[for="button4"] {
     background-color: white;
 }
   
-#button2:checked~.switch label[for="button2"] {
+#button5:checked~.switch label[for="button5"] {
     background-color: white;
 }
   
-#button3:checked~.switch label[for="button3"] {
+#button6:checked~.switch label[for="button6"] {
     background-color: white;
 }
   
@@ -449,29 +555,28 @@ h2 {
     margin-right: 60px; 
 }
 
-#button1:checked~slider-inner slides {
+#button4:checked~slider-inner slides {
     transform: translate(0);
 }
   
-#button2:checked~.slider-inner .slides {
+#button5:checked~.slider-inner .slides {
     transform: translate(-880px);
 }
   
-#button3:checked~.slider-inner .slides {
+#button6:checked~.slider-inner .slides {
     transform: translate(-1760px);
 }
 
 /*SECTION6*/
 
 #pricing {
-    padding: 0 200px;
     text-align: center;
 }
 
 .flexiblePrices {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 1300px;
     margin: auto;
     box-shadow: 0 0 10px rgba(160, 160, 160, 0.5);
 }
@@ -527,14 +632,15 @@ h6 {
 
 footer {
     display: flex;
-    margin-top: 10%;
+    justify-content: center;
+    margin-top: 200px;
 }
 
 .copyright {
-    width: 49%;
+    width: 1000px;
     background-color:	#E8E8E8;
     color: #BDBDBD;
-    margin-left: 1%;
+    margin-left: 6%;
     padding: 5% 0;
 }
 
@@ -543,10 +649,36 @@ footer {
 }
 
 .subscription {
-    width: 50%;
+    width: 1000px;
     padding: 5% 0;
+}
+
+.subscription :first-child{
+    font-size: 26px;
 }
 
 .subscription p {
     padding-left: 50px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+input[type=email]{
+    padding-left: 50px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+input[type=submit] { 
+    padding-left: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url(assets/paper-airplane.png);
+    border: none;
+}
+
+.formName{
+    color: #fff;
 }
